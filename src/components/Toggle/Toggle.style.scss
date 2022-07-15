@@ -1,0 +1,100 @@
+@use "sass:math";
+
+.md-toggle-switch {
+  $switch-width: 2.75rem;
+  $switch-height: math.div($switch-width, 2);
+  $thumb-size: 0.635rem;
+  $thumb-margin: math.div($switch-height - $thumb-size, 2);
+  $transition-time: 150ms;
+
+  appearance: none;
+  width: $switch-width;
+  height: $switch-height;
+  border-radius: math.div($switch-height, 2);
+  margin-right: 0.5rem;
+  transition: background $transition-time;
+  background-color: var(--toggle-untoggled-background);
+
+  &:before {
+    content: '';
+    width: $thumb-size;
+    height: $thumb-size;
+    border-radius: math.div($thumb-size, 2);
+    margin: $thumb-margin;
+    display: block;
+    transition: transform $transition-time;
+    background-color: var(--toggle-untoggled-thumb-tint);
+  }
+
+  &:checked:before {
+    transform: translateX($switch-width - $switch-height);
+  }
+
+  &:checked {
+    background-color: var(--toggle-toggled-background);
+
+    &:before {
+      background-color: var(--toggle-toggled-thumb-tint);
+      transform: translateX($switch-width - $switch-height);
+    }
+  }
+
+  // Focused
+  &:focus {
+    box-shadow: var(--md-globals-focus-ring-box-shadow);
+  }
+
+  // Hovered
+  &:hover {
+    background-color: var(--toggle-untoggled-background-hovered);
+
+    &:before {
+      background-color: var(--toggle-untoggled-thumb-tint-hovered);
+    }
+
+    &:checked {
+      background-color: var(--toggle-toggled-background-hovered);
+
+      &:before {
+        background-color: var(--toggle-toggled-thumb-tint-hovered);
+        transform: translateX($switch-width - $switch-height);
+      }
+    }
+  }
+
+  // Pressed
+  &:active {
+    background-color: var(--toggle-untoggled-background-pressed);
+
+    &:before {
+      background-color: var(--toggle-untoggled-thumb-tint-pressed);
+    }
+
+    &:checked {
+      background-color: var(--toggle-toggled-background-pressed);
+
+      &:before {
+        background-color: var(--toggle-toggled-thumb-tint-pressed);
+        transform: translateX($switch-width - $switch-height);
+      }
+    }
+  }
+
+  // Disabled
+  &:disabled {
+    background-color: var(--toggle-untoggled-background-disabled);
+
+    &:before {
+      background-color: var(--toggle-untoggled-thumb-tint-disabled);
+    }
+
+    &:checked {
+      background-color: var(--toggle-toggled-background-disabled);
+
+      &:before {
+        background-color: var(--toggle-toggled-thumb-tint-disabled);
+        transform: translateX($switch-width - $switch-height);
+      }
+    }
+  }
+}

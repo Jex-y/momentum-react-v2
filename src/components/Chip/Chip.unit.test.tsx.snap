@@ -7,6 +7,10 @@ exports[`<Chip /> snapshot it should match snapshot with disabled 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     disabled={true}
     size={28}
   >
@@ -17,7 +21,10 @@ exports[`<Chip /> snapshot it should match snapshot with disabled 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
       isDisabled={true}
@@ -37,7 +44,10 @@ exports[`<Chip /> snapshot it should match snapshot with disabled 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             disabled={true}
@@ -59,9 +69,14 @@ exports[`<Chip /> snapshot it should match snapshot with disabled 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               />
             </Text>
@@ -80,6 +95,10 @@ exports[`<Chip /> snapshot it should match snapshot with error 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={true}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     error={true}
     size={28}
   >
@@ -90,7 +109,10 @@ exports[`<Chip /> snapshot it should match snapshot with error 1`] = `
       data-error={true}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
       error={true}
@@ -107,7 +129,10 @@ exports[`<Chip /> snapshot it should match snapshot with error 1`] = `
             data-error={true}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -128,10 +153,186 @@ exports[`<Chip /> snapshot it should match snapshot with error 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
+              />
+            </Text>
+          </button>
+        </FocusRing>
+      </FocusRing>
+    </ButtonSimple>
+  </ButtonPill>
+</Chip>
+`;
+
+exports[`<Chip /> snapshot it should match snapshot with mulitline color 1`] = `
+<Chip
+  chipColor="cobalt"
+  multiline={true}
+>
+  <ButtonPill
+    chipColor="cobalt"
+    className="md-chip-wrapper"
+    data-error={false}
+    data-modifier-color="cobalt"
+    data-multiline={true}
+    data-search={false}
+    data-size={28}
+    multiline={true}
+    size={28}
+  >
+    <ButtonSimple
+      chipColor="cobalt"
+      className="md-button-pill-wrapper md-chip-wrapper"
+      data-color="primary"
+      data-disabled={false}
+      data-error={false}
+      data-ghost={false}
+      data-grown={false}
+      data-modifier-color="cobalt"
+      data-multiline={true}
+      data-outline={false}
+      data-search={false}
+      data-size={28}
+      data-solid={false}
+      multiline={true}
+    >
+      <FocusRing>
+        <FocusRing
+          focusClass="md-focus-ring-wrapper children"
+          focusRingClass="md-focus-ring-wrapper children"
+        >
+          <button
+            className="md-button-pill-wrapper md-chip-wrapper md-button-simple-wrapper"
+            data-color="primary"
+            data-disabled={false}
+            data-error={false}
+            data-ghost={false}
+            data-grown={false}
+            data-modifier-color="cobalt"
+            data-multiline={true}
+            data-outline={false}
+            data-search={false}
+            data-size={28}
+            data-solid={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragStart={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchCancel={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            type="button"
+          >
+            <Text
+              className="md-chip-center-section"
+              data-multiline={true}
+              data-search={false}
+              type="subheader-secondary"
+            >
+              <h3
+                className="md-text-wrapper md-chip-center-section"
+                data-multiline={true}
+                data-search={false}
+                data-type="subheader-secondary"
+              />
+            </Text>
+          </button>
+        </FocusRing>
+      </FocusRing>
+    </ButtonSimple>
+  </ButtonPill>
+</Chip>
+`;
+
+exports[`<Chip /> snapshot it should match snapshot with multiline 1`] = `
+<Chip
+  multiline={true}
+>
+  <ButtonPill
+    className="md-chip-wrapper"
+    data-error={false}
+    data-modifier-color="mint"
+    data-multiline={true}
+    data-search={false}
+    data-size={28}
+    multiline={true}
+    size={28}
+  >
+    <ButtonSimple
+      className="md-button-pill-wrapper md-chip-wrapper"
+      data-color="primary"
+      data-disabled={false}
+      data-error={false}
+      data-ghost={false}
+      data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={true}
+      data-outline={false}
+      data-search={false}
+      data-size={28}
+      data-solid={false}
+      multiline={true}
+    >
+      <FocusRing>
+        <FocusRing
+          focusClass="md-focus-ring-wrapper children"
+          focusRingClass="md-focus-ring-wrapper children"
+        >
+          <button
+            className="md-button-pill-wrapper md-chip-wrapper md-button-simple-wrapper"
+            data-color="primary"
+            data-disabled={false}
+            data-error={false}
+            data-ghost={false}
+            data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={true}
+            data-outline={false}
+            data-search={false}
+            data-size={28}
+            data-solid={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragStart={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchCancel={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            type="button"
+          >
+            <Text
+              className="md-chip-center-section"
+              data-multiline={true}
+              data-search={false}
+              type="subheader-secondary"
+            >
+              <h3
+                className="md-text-wrapper md-chip-center-section"
+                data-multiline={true}
+                data-search={false}
+                data-type="subheader-secondary"
               />
             </Text>
           </button>
@@ -149,6 +350,10 @@ exports[`<Chip /> snapshot it should match snapshot with outline 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     outline={true}
     size={28}
   >
@@ -159,7 +364,10 @@ exports[`<Chip /> snapshot it should match snapshot with outline 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={true}
+      data-search={false}
       data-size={28}
       data-solid={false}
     >
@@ -175,7 +383,10 @@ exports[`<Chip /> snapshot it should match snapshot with outline 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={true}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -196,9 +407,98 @@ exports[`<Chip /> snapshot it should match snapshot with outline 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
+                data-type="body-primary"
+              />
+            </Text>
+          </button>
+        </FocusRing>
+      </FocusRing>
+    </ButtonSimple>
+  </ButtonPill>
+</Chip>
+`;
+
+exports[`<Chip /> snapshot it should match snapshot with search 1`] = `
+<Chip
+  search={true}
+>
+  <ButtonPill
+    className="md-chip-wrapper"
+    data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={true}
+    data-size={28}
+    search={true}
+    size={28}
+  >
+    <ButtonSimple
+      className="md-button-pill-wrapper md-chip-wrapper"
+      data-color="primary"
+      data-disabled={false}
+      data-error={false}
+      data-ghost={false}
+      data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
+      data-outline={false}
+      data-search={true}
+      data-size={28}
+      data-solid={false}
+      search={true}
+    >
+      <FocusRing>
+        <FocusRing
+          focusClass="md-focus-ring-wrapper children"
+          focusRingClass="md-focus-ring-wrapper children"
+        >
+          <button
+            className="md-button-pill-wrapper md-chip-wrapper md-button-simple-wrapper"
+            data-color="primary"
+            data-disabled={false}
+            data-error={false}
+            data-ghost={false}
+            data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
+            data-outline={false}
+            data-search={true}
+            data-size={28}
+            data-solid={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragStart={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchCancel={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            type="button"
+          >
+            <Text
+              className="md-chip-center-section"
+              data-multiline={false}
+              data-search={true}
+              type="body-primary"
+            >
+              <p
+                className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={true}
                 data-type="body-primary"
               />
             </Text>
@@ -215,6 +515,10 @@ exports[`<Chip /> snapshot should match snapshot 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     size={28}
   >
     <ButtonSimple
@@ -224,7 +528,10 @@ exports[`<Chip /> snapshot should match snapshot 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
     >
@@ -240,7 +547,10 @@ exports[`<Chip /> snapshot should match snapshot 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -261,9 +571,14 @@ exports[`<Chip /> snapshot should match snapshot 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               />
             </Text>
@@ -291,6 +606,10 @@ exports[`<Chip /> snapshot should match snapshot with avatar 1`] = `
     }
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     size={28}
   >
     <ButtonSimple
@@ -305,7 +624,10 @@ exports[`<Chip /> snapshot should match snapshot with avatar 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
     >
@@ -321,7 +643,10 @@ exports[`<Chip /> snapshot should match snapshot with avatar 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -356,9 +681,14 @@ exports[`<Chip /> snapshot should match snapshot with avatar 1`] = `
             </div>
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               />
             </Text>
@@ -377,6 +707,10 @@ exports[`<Chip /> snapshot should match snapshot with className 1`] = `
   <ButtonPill
     className="example-class"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     size={28}
   >
     <ButtonSimple
@@ -386,7 +720,10 @@ exports[`<Chip /> snapshot should match snapshot with className 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
     >
@@ -402,7 +739,10 @@ exports[`<Chip /> snapshot should match snapshot with className 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -423,9 +763,14 @@ exports[`<Chip /> snapshot should match snapshot with className 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               />
             </Text>
@@ -444,6 +789,10 @@ exports[`<Chip /> snapshot should match snapshot with id 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     id="example-id"
     size={28}
   >
@@ -454,7 +803,10 @@ exports[`<Chip /> snapshot should match snapshot with id 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
       id="example-id"
@@ -471,7 +823,10 @@ exports[`<Chip /> snapshot should match snapshot with id 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             id="example-id"
@@ -493,9 +848,14 @@ exports[`<Chip /> snapshot should match snapshot with id 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               />
             </Text>
@@ -519,6 +879,10 @@ exports[`<Chip /> snapshot should match snapshot with left icon 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     leftIcon={
       <Icon
         name="placeholder"
@@ -534,7 +898,10 @@ exports[`<Chip /> snapshot should match snapshot with left icon 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
       leftIcon={
@@ -556,7 +923,10 @@ exports[`<Chip /> snapshot should match snapshot with left icon 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -586,9 +956,14 @@ exports[`<Chip /> snapshot should match snapshot with left icon 1`] = `
             </div>
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               />
             </Text>
@@ -612,6 +987,10 @@ exports[`<Chip /> snapshot should match snapshot with right icon 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     rightIcon={
       <Icon
         name="placeholder"
@@ -627,7 +1006,10 @@ exports[`<Chip /> snapshot should match snapshot with right icon 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
       rightIcon={
@@ -649,7 +1031,10 @@ exports[`<Chip /> snapshot should match snapshot with right icon 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -670,9 +1055,14 @@ exports[`<Chip /> snapshot should match snapshot with right icon 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               />
             </Text>
@@ -703,6 +1093,10 @@ exports[`<Chip /> snapshot should match snapshot with style 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     size={28}
     style={
       Object {
@@ -717,7 +1111,10 @@ exports[`<Chip /> snapshot should match snapshot with style 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
       style={
@@ -738,7 +1135,10 @@ exports[`<Chip /> snapshot should match snapshot with style 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -764,9 +1164,14 @@ exports[`<Chip /> snapshot should match snapshot with style 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               />
             </Text>
@@ -785,6 +1190,10 @@ exports[`<Chip /> snapshot should match snapshot with text 1`] = `
   <ButtonPill
     className="md-chip-wrapper"
     data-error={false}
+    data-modifier-color="mint"
+    data-multiline={false}
+    data-search={false}
+    data-size={28}
     size={28}
     text="Some chip text"
   >
@@ -795,7 +1204,10 @@ exports[`<Chip /> snapshot should match snapshot with text 1`] = `
       data-error={false}
       data-ghost={false}
       data-grown={false}
+      data-modifier-color="mint"
+      data-multiline={false}
       data-outline={false}
+      data-search={false}
       data-size={28}
       data-solid={false}
       text="Some chip text"
@@ -812,7 +1224,10 @@ exports[`<Chip /> snapshot should match snapshot with text 1`] = `
             data-error={false}
             data-ghost={false}
             data-grown={false}
+            data-modifier-color="mint"
+            data-multiline={false}
             data-outline={false}
+            data-search={false}
             data-size={28}
             data-solid={false}
             onBlur={[Function]}
@@ -833,9 +1248,14 @@ exports[`<Chip /> snapshot should match snapshot with text 1`] = `
           >
             <Text
               className="md-chip-center-section"
+              data-multiline={false}
+              data-search={false}
+              type="body-primary"
             >
               <p
                 className="md-text-wrapper md-chip-center-section"
+                data-multiline={false}
+                data-search={false}
                 data-type="body-primary"
               >
                 Some chip text

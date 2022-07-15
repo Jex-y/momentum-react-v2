@@ -86,6 +86,57 @@ const chipArgTypes = {
       },
     },
   },
+  chipColor: {
+    description: 'Sets the chip color',
+    control: { type: 'select' },
+    options: [undefined, ...Object.values(CHIP_CONSTANTS.MULTILINE_COLORS)],
+    table: {
+      type: {
+        summary: 'TeamColor',
+      },
+      defaultValue: {
+        summary: CHIP_CONSTANTS.DEFAULTS.COLOR,
+      },
+    },
+  },
+  multiline: {
+    description: 'Sets whether the chip is using the multiline modifier',
+    control: { type: 'boolean' },
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: {
+        summary: CHIP_CONSTANTS.DEFAULTS.MULTILINE,
+      },
+    },
+  },
+  search: {
+    description: 'Sets whether the chip is using the search modifier',
+    control: { type: 'boolean' },
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: {
+        summary: CHIP_CONSTANTS.DEFAULTS.SEARCH,
+      },
+    },
+  },
+  size: {
+    description:
+      'Sets the chip size. `28` is default, `28` and `24` are expected to be used for the `search` modifier, `16` is expected used for the `multiline` modifier.',
+    control: { type: 'select' },
+    options: [undefined, 16, 24, 28],
+    table: {
+      type: {
+        summary: 'number',
+      },
+      defaultValue: {
+        summary: CHIP_CONSTANTS.DEFAULTS.SIZE,
+      },
+    },
+  },
 };
 
 export { chipArgTypes };

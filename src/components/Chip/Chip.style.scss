@@ -5,26 +5,75 @@ button.md-button-pill-wrapper.md-chip-wrapper.md-button-simple-wrapper {
 .md-chip-wrapper {
   align-items: center;
   display: flex;
+  border-radius: 1rem;
 
   &[data-error='true'],
   &[data-error='true']:hover,
   &[data-error='true']:active {
-    background-color: var(--theme-background-alert-error-normal);
-    color: var(--theme-text-error-normal);
+    background-color: var(--chips-background-error);
+    color: var(--chips-text-error);
 
     &[data-outline='true'] {
-      border: 1px solid;
-      border-radius: 1rem;
-      border-color: var(--theme-outline-cancel-normal);
+      border: 0.0625rem solid;
+      border-color: var(--chips-outline-error);
     }
   }
 
   &[data-error='false'] {
     &[data-outline='true'] {
-      border: 1px solid;
+      border: 0.0625rem solid;
       border-radius: 1rem;
-      border-color: var(--theme-outline-primary-normal);
+      border-color: var(--chips-outline-normal);
     }
+  }
+
+  &[data-multiline='true'] {
+    border-radius: 0.875rem;
+    background-color: var(--chips-outline-multiline-background);
+
+    &[data-modifier-color='orange'] {
+      border-color: var(--chips-outline-multiline-text-orange);
+      color: var(--chips-outline-multiline-text-orange);
+    }
+
+    &[data-modifier-color='lime'] {
+      border-color: var(--chips-outline-multiline-text-lime);
+      color: var(--chips-outline-multiline-text-lime);
+    }
+
+    &[data-modifier-color='mint'] {
+      border-color: var(--chips-outline-multiline-text-mint);
+      color: var(--chips-outline-multiline-text-mint);
+    }
+
+    &[data-modifier-color='cyan'] {
+      border-color: var(--chips-outline-multiline-text-cyan);
+      color: var(--chips-outline-multiline-text-cyan);
+    }
+
+    &[data-modifier-color='cobalt'] {
+      border-color: var(--chips-outline-multiline-text-cobalt);
+      color: var(--chips-outline-multiline-text-cobalt);
+    }
+
+    &[data-modifier-color='violet'] {
+      border-color: var(--chips-outline-multiline-text-violet);
+      color: var(--chips-outline-multiline-text-violet);
+    }
+
+    &[data-modifier-color='purple'] {
+      border-color: var(--chips-outline-multiline-text-purple);
+      color: var(--chips-outline-multiline-text-purple);
+    }
+
+    &[data-modifier-color='pink'] {
+      border-color: var(--chips-outline-multiline-text-pink);
+      color: var(--chips-outline-multiline-text-pink);
+    }
+  }
+
+  &[data-search='true'] {
+    border-width: 0rem;
   }
 
   > .md-chip-right-section {
@@ -50,7 +99,24 @@ button.md-button-pill-wrapper.md-chip-wrapper.md-button-simple-wrapper {
   }
 
   > .md-chip-center-section:first-child:last-child {
-    padding: 0em 0.625rem;
+    padding: 0rem 0.625rem;
+
+    &[data-search='true'] {
+      &[data-size='24'] {
+        padding: 0.0625rem 0.5rem;
+      }
+
+      &[data-size='28'] {
+        padding: 0.125rem 0.5rem;
+      }
+    }
+
+    &[data-multiline='true'] {
+      padding: 0rem 0.40625rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 1.125rem;
+    }
   }
 
   > .md-chip-center-section:first-child {

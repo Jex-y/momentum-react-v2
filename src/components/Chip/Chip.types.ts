@@ -1,9 +1,12 @@
 import { CSSProperties, ReactElement } from 'react';
 import { AvatarProps } from '../Avatar';
 import { IconProps } from '../Icon';
+import { TeamColor } from '../ThemeProvider/ThemeProvider.types';
 
 export type SupportedAvatar = ReactElement<AvatarProps>;
 export type SupportedIcon = ReactElement<IconProps>;
+export type SupportedColor = TeamColor;
+export type SupportedSize = 16 | 24 | 28;
 
 export interface Props {
   /**
@@ -60,4 +63,24 @@ export interface Props {
    * Boolean to describe if the chip is in the error state.
    */
   error?: boolean;
+
+  /**
+   * String to describe the color.
+   */
+  chipColor?: SupportedColor;
+
+  /**
+   * Boolean to describe if a chip should be multiline style.
+   */
+  multiline?: boolean;
+
+  /**
+   * Boolean to describe if a chip should be search style.
+   */
+  search?: boolean;
+
+  /**
+   * Number to describe the size of component.
+   */
+  size?: SupportedSize;
 }
